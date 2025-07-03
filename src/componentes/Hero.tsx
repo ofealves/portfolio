@@ -3,9 +3,9 @@ export const Hero = () => {
         <section className="flex h-screen w-screen">
             <div className=" w-1/2 flex items-center justify-center flex-col ">
                 <h2 className="text-xl text-gray-300 mb-2">Oi, eu sou</h2>
-                <h1 className="text-5xl font-bold text-white mb-2">Felipe Alves</h1>
+                <h1 className="text-5xl font-600 text-white mb-2">Felipe Alves</h1>
                 <h2 className="text-xl text-[#25d366] mb-4">Apaixonado por tecnologia</h2>
-                <p className="text-sm text-gray-400 max-w-md text-center mb-6">
+                <p className="text-sm text-gray-400 max-w-md text-center mb-6 font-poppins">
                     Sou estudante de Engenharia de Software e desenvolvedor front-end em formação, apaixonado por tecnologia e movido por desafios.
                     Estou sempre em busca de evoluir, aprender coisas novas e transformar ideias em experiências reais e impactantes.
                 </p>

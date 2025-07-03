@@ -4,20 +4,28 @@ export const Navbar = () => {
     return (
         <nav className="bg-[#1A202C] py-4 px-6 shadow-md sticky top-0 z-50 flex">
             <div>
-                <h1>Fe Alves();</h1>
+                <div className="flex items-center space-x-2 text-white font-mono text-xl">
+                    <span className="text-[#25d366]">{'<>'}</span>
+                    <span>FeAlves<span className="text-gray-400">.dev</span></span>
+                </div>
+
+
+
+
+
             </div>
 
-            <div className="max-w-7xl mx-auto flex items-center space-x-10 bg-red-500">
+            <div className="max-w-7xl w-full mx-auto flex items-center space-x-10 justify-center">
                 <Link href="#home" className="flex items-center gap-2 hover:text-[#25d366] text-gray-300 font-medium transition-colors duration-200">
                     <img src="/images/icones/home.svg" alt="Ícone Home" className="w-5 h-5" />
                     Home
                 </Link>
                 <Link href="#projects" className="flex items-center gap-2 hover:text-[#25d366] text-gray-300 font-medium transition-colors duration-200">
-                    <img src="/images/icones/code.svg" alt="Ícone Projetos" className="w-5 h-5" />
+                    <img src="/images/icones/wrench.svg" alt="Ícone Projetos" className="w-5 h-5" />
                     Projetos
                 </Link>
                 <Link href="#skills" className="flex items-center gap-2 hover:text-[#25d366] text-gray-300 font-medium transition-colors duration-200">
-                    <img src="/images/icones/code.svg" alt="Ícone Skills" className="w-5 h-5" />
+                    <img src="/images/icones/cereb.svg" alt="Ícone Skills" className="w-5 h-5" />
                     Skills
                 </Link>
                 <Link href="#contato" className="flex items-center gap-2 hover:text-[#25d366] text-gray-300 font-medium transition-colors duration-200">
@@ -37,7 +45,7 @@ export const Navbar = () => {
             </div>
             <button
                 type="submit"
-                className="bg-blue-500 hover:bg-blue-600 text-white rounded h-6 text-xs w-12"
+                className="bg-[#25d366] hover:bg-[#1ebe57] text-white rounded h-6 text-xs w-12 cursor-pointer"
             >
                 GitHub
             </button>

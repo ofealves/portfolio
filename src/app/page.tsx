@@ -11,6 +11,7 @@ import { Skills } from "@/componentes/Skills";
 const Page = () => {
   return (
     <div>
+      
       <Navbar />
       <Hero />
       <Aboutme />

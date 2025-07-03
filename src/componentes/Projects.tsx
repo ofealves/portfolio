@@ -62,7 +62,7 @@ export const Projects = () => {
                         <div className="flex gap-4">
                             <a
                                 href={moreLink}
-                                className="bg-[#25d366] hover:bg-[#1ebe57] px-4 py-2 rounded-md text-white font-semibold transition"
+                                className="bg-[#25d366] hover:bg-[#1ebe57] text-white px-6 py-2 rounded-md transition duration-300 shadow hover:shadow-lg"
                             >
                                 Ver mais
                             </a>
