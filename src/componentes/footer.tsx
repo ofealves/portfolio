@@ -1,6 +1,6 @@
 export const Footer = () => {
     return (
-        <footer className="w-full bg-[#1A202C] py-6 flex flex-col items-center space-y-4 text-gray-400 text-sm">
+        <footer className="w-full bg-[#112240] py-6 flex flex-col items-center space-y-4 text-gray-400 text-sm">
 
             {/* Redes sociais */}
             <div className="flex space-x-4">

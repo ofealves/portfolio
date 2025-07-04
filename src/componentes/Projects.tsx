@@ -3,50 +3,54 @@ export const Projects = () => {
         {
             title: "Previsão do Tempo",
             image: "/images/prev.jpeg",
-            description: "Aplicação web que exibe a previsão do tempo em tempo real com base na localização do usuário ou cidade pesquisada. Utiliza a API OpenWeather e é construída com React e Tailwind CSS.",
+            description:
+                "Aplicação web que exibe a previsão do tempo em tempo real com base na localização do usuário ou cidade pesquisada. Utiliza a API OpenWeather e é construída com React e Tailwind CSS.",
             techIcons: ["react", "tailwindcss"],
             moreLink: "#",
-            codeLink: "https://github.com/seuusuario/previsao-do-tempo"
+            codeLink: "https://github.com/seuusuario/previsao-do-tempo",
         },
         {
             title: "Controle Financeiro",
             image: "/images/fin.jpeg",
-            description: "Aplicação de controle financeiro pessoal que permite registrar entradas e saídas, calcular saldo total e visualizar transações em tempo real. Desenvolvida com React, Context API e Tailwind CSS para uma interface simples e responsiva.",
+            description:
+                "Aplicação de controle financeiro pessoal para registrar entradas e saídas, calcular saldo e visualizar transações. Feita com React, Context API e Tailwind CSS.",
             techIcons: ["react", "tailwindcss"],
             moreLink: "#",
-            codeLink: "https://github.com/seuusuario/controle-financeiro"
+            codeLink: "https://github.com/seuusuario/controle-financeiro",
         },
         {
             title: "Dev Burguer",
             image: "/images/dev.jpeg",
-            description: "Sistema de gerenciamento de pedidos para uma hamburgueria fictícia. Feito com Next.js, TypeScript e integração com Firebase. Permite criar pedidos, gerenciar status e visualizar detalhes em tempo real.",
+            description:
+                "Sistema de gerenciamento de pedidos para uma hamburgueria fictícia. Desenvolvido com Next.js, TypeScript e Firebase para integração em tempo real.",
             techIcons: ["nextjs", "typescript", "firebase"],
             moreLink: "#",
-            codeLink: "https://github.com/seuusuario/dev-burguer"
-        }
+            codeLink: "https://github.com/seuusuario/dev-burguer",
+        },
     ];
 
     return (
-        <section className=" py-12 px-4" id="projects">
-            <h1 className="text-white text-center mb-10 text-5xl font-extrabold tracking-tight">Projetos</h1>
+        <section className="py-20 px-4 bg-[#0a192f]" id="projects">
+            <h1 className="text-white text-5xl font-extrabold tracking-tight text-center font-title mb-16">
+                Projetos
+            </h1>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
                 {projects.map(({ title, image, description, techIcons, moreLink, codeLink }) => (
                     <div
                         key={title}
-                        className="bg-[112240] p-6 rounded-lg text-white shadow-md hover:shadow-lg transition-shadow duration-300"
-                        style={{ boxShadow: "0 4px 6px rgba(0,0,0,0.1)" }}
+                        className="bg-[#112240] p-6 rounded-lg text-white shadow-lg border border-transparent hover:border-[#25d366] transition-all duration-300"
                     >
                         <img
                             src={image}
                             alt={title}
-                            className="w-full h-48 object-cover mb-4 rounded border-2 border-transparent hover:border-[#25d366] transition-colors duration-300"
+                            className="w-full h-48 object-cover rounded mb-4 border-2 border-transparent hover:border-[#25d366] transition"
                         />
-                        <h2 className="text-xl font-semibold mb-2">{title}</h2>
-                        <p className="text-sm mb-4">{description}</p>
 
-                        {/* Ícones de tecnologias */}
-                        <div className="flex gap-3 mb-6">
+                        <h2 className="text-xl font-semibold mb-2">{title}</h2>
+                        <p className="text-sm text-gray-300 leading-relaxed mb-4">{description}</p>
+
+                        <div className="flex flex-wrap gap-3 mb-6">
                             {techIcons.map((tech) => (
                                 <img
                                     key={tech}
@@ -58,23 +62,24 @@ export const Projects = () => {
                             ))}
                         </div>
 
-                        {/* Botões */}
-                        <div className="flex gap-4">
-                            <a
-                                href={moreLink}
-                                className="bg-[#25d366] hover:bg-[#1ebe57] text-white px-6 py-2 rounded-md transition duration-300 shadow hover:shadow-lg"
-                            >
-                                Ver mais
-                            </a>
+                        <div className="flex flex-wrap gap-3">
+                            {moreLink && (
+                                <a
+                                    href={moreLink}
+                                    className="bg-[#25d366] hover:bg-[#1ebe57] text-white px-5 py-2 rounded-md transition duration-300 shadow-sm hover:shadow-md text-sm font-medium"
+                                >
+                                    Ver mais
+                                </a>
+                            )}
 
                             <a
                                 href={codeLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-2 border border-[#25d366] text-[#25d366] hover:bg-[#25d366] hover:text-white px-4 py-2 rounded-md font-semibold transition"
+                                className="flex items-center gap-2 border border-[#25d366] text-[#25d366] hover:bg-[#25d366] hover:text-white px-4 py-2 rounded-md text-sm font-medium transition"
                             >
                                 <img src="/images/icones/github.svg" alt="GitHub" className="w-5 h-5" />
-                                Ver Código
+                                Ver código
                             </a>
                         </div>
                     </div>

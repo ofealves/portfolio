@@ -6,7 +6,7 @@ import { Footer } from "@/componentes/footer";
 import { Hero } from "@/componentes/Hero";
 import { Navbar } from "@/componentes/Navbar";
 import { Projects } from "@/componentes/Projects";
-import { Skills } from "@/componentes/Skills";
+import { Skills, } from "@/componentes/Skills";
 
 
 const Page = () => {
@@ -16,7 +16,6 @@ const Page = () => {
       
       <Navbar />
       <Hero />
-      <Aboutme />
       <Skills />
       <Projects />
       <Contact />
