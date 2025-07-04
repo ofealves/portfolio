@@ -34,7 +34,7 @@ export const Projects = () => {
                 {projects.map(({ title, image, description, techIcons, moreLink, codeLink }) => (
                     <div
                         key={title}
-                        className="bg-[#2D3748] p-6 rounded-lg text-white shadow-md hover:shadow-lg transition-shadow duration-300"
+                        className="bg-[112240] p-6 rounded-lg text-white shadow-md hover:shadow-lg transition-shadow duration-300"
                         style={{ boxShadow: "0 4px 6px rgba(0,0,0,0.1)" }}
                     >
                         <img

@@ -1,6 +1,6 @@
 export const Contact = () => {
     return (
-        <section className="w-full min-h-screen flex items-center justify-center bg-[#0A0A0A] py-16 px-4">
+        <section className="w-full min-h-screen flex items-center justify-center py-16 px-4">
             <div className="w-full max-w-md">
                 <h1 className="text-5xl text-white text-center font-extrabold mb-8 tracking-tight font-poppins">
                     Contato

@@ -2,6 +2,7 @@
 
 import { Aboutme } from "@/componentes/aboutme";
 import { Contact } from "@/componentes/Contact";
+import { Footer } from "@/componentes/footer";
 import { Hero } from "@/componentes/Hero";
 import { Navbar } from "@/componentes/Navbar";
 import { Projects } from "@/componentes/Projects";
@@ -12,12 +13,14 @@ const Page = () => {
   return (
     <div>
       
+      
       <Navbar />
       <Hero />
       <Aboutme />
       <Skills />
       <Projects />
       <Contact />
+      <Footer/>
     </div>
   )
 }
